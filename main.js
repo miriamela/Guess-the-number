@@ -6,7 +6,7 @@ function getRandomNumber(max) {
     
 };
 
-let randomNumber=getRandomNumber(100);
+const randomNumber=getRandomNumber(100);
 
 const submit=document.querySelector('.submit');
 const numberIntroduced=document.querySelector('.input');
@@ -14,6 +14,7 @@ const clue=document.querySelector('.clue');
 const attempt=document.querySelector('.attempt');
 
 function hope(){
+    
     if (numberIntroduced.value < randomNumber){
         clue.value= `Demasiado bajo`
     }
@@ -27,11 +28,13 @@ function hope(){
          clue.value=`El número debe estar
          entre 1 y 100.`
     }
+    event.preventDefault()
 };
 
 function counting(){
-    const count=0
-    attempt.value=count += 1;
+    const count=0;
+    const counting=count+=1;
+    attempt.value= counting;
     
     console.log
     
