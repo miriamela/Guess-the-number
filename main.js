@@ -31,12 +31,11 @@ function hope(){
     event.preventDefault()
 };
 
+const count=0;
 function counting(){
-    const count=0;
     const counting=count+=1;
     attempt.value= counting;
     
-    console.log
     
 }
 
