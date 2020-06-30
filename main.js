@@ -29,12 +29,19 @@ function hope(){
     }
 };
 
-const count=0
 function counting(){
-    count=0
-    const numberAttempts=submit.onlick=count += 1);
-    attempt.value=
+    const count=0
+    attempt.value=count += 1;
+    
+    console.log
     
 }
 
-submit.addEventListener('click', hope);
+
+function together(){
+    hope()
+    counting()
+
+}
+
+submit.addEventListener('click', together);
