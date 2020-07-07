@@ -12,6 +12,7 @@ const numberIntroduced=document.querySelector('.input');
 const clue=document.querySelector('.clue');
 const attempt=document.querySelector('.attempt');
 
+
 function renderHint( message ) {
     clue.innerHTML = message;
 }
@@ -19,7 +20,10 @@ function renderHint( message ) {
 function generateHint(event){
     event.preventDefault();
     const number=parseInt(numberIntroduced.value);
-    if( isNaN(number) || number === '' || number <1 || number>100){
+    if( isNaN(number) || number === '' ){
+        renderHint( `Tiene que ser un número` );
+    }
+    else if(number <1 || number>100){
         renderHint( `El número debe estar entre 1 y 100.` );
     }
     else if (number < randomNumber){
@@ -48,4 +52,9 @@ function processingNumber(event){
 
 submit.addEventListener('click', processingNumber);
 
+submit.addEventListener( 'keyup', function( event ) {
+    if( event.keyCode === 13 ||event.which == 13) {
+        processingNumber(event);
+    }
+});
 
