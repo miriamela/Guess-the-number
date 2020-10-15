@@ -1,3 +1,3 @@
 # Adivina el número!
 
-Jueguito!
+Jueguito..
