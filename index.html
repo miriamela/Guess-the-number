@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Evaluación intermedia 2</title>
-</head>
-<body class="page">
-    <h1>Adivina el número</h1>
-    <form action="">
-        <label for="number"> Introduce aqui tu número:
-            <input id="number" type="text" class="input" value="" placeholder="Dame un número!">
-        </label>
-        <button class="submit" type="submit">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Guess the number</title>
+  </head>
+  <body class="page">
+    <div class="img-container">
+      <img
+        class="img"
+        src="./img/Screenshot 2020-12-03 at 13.30.38.png"
+        alt="img"
+      />
+    </div>
+    <header class="header">
+      <h1 class="title">ADIVINA EL NÚMERO</h1>
+    </header>
+    <main class="main">
+      <form class="form" action="">
+        <label for="number"> </label>
+        Introduce aqui tu número:
+        <input
+          id="number"
+          type="text"
+          class="input"
+          value=""
+          placeholder="Dame un número!"
+        />
+
+        <div class="buttons">
+          <button class="submit" type="submit">
             <p>Prueba</p>
-        </button>
-    </form>
-    
-    <div class="clue">Pista: Escribe el número y dale a Prueba</div>
+          </button>
+          <button class="reset" type="reset">
+            <p>Reset</p>
+          </button>
+        </div>
+      </form>
+      <section class="hints">
+        <p class="clue">Pista: Escribe el número y dale a Prueba</p>
 
-    <div class="attempt">Número de intentos: 0</div>
-
+        <p class="attempt">Número de intentos: 0</p>
+      </section>
+    </main>
     <script type="text/javascript" src="./main.js"></script>
-</body>
+  </body>
 </html>
